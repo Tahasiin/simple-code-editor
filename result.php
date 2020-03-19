@@ -7,8 +7,8 @@
 session_start();
 
 if(isset($_GET['fullscreen'])){
-    echo '<a href="index.php" style="font-size:15px;float:right">'
-    . '      <button>'
+    echo '<a href="index.php" style="font-size:15px;float:right;">'
+    . '      <button style="cursor:pointer">'
             . '  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Back To Editor'
           . '</button>'
        . '</a>';

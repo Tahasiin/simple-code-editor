@@ -45,25 +45,6 @@ if (isset($_SESSION['code'])) {
         <iframe src="result.php" style="width: 100%;height: 300px"></iframe>
         
         <script>
-            $(document).ready(function () {
-                $("#button").click(function () {
-                    var message_to = $("#message_to").val();
-                    var message = $("#message").val();
-                    $.ajax({
-                        url: 'post.php',
-                        method: 'POST',
-                        data: {
-                            message_to: message_to,
-                            message: message
-                        },
-                        success: function (data) {
-                            $("#message").val('');
-                        }
-                    });
-                });
-            });
-        </script>
-        <script>
             if (window.history.replaceState) {
                 window.history.replaceState(null, null, window.location.href);
             }
