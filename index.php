@@ -33,6 +33,9 @@ if (isset($_SESSION['code'])) {
         <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <button type="submit" name="submit">RUN <i class="fa fa-play" aria-hidden="true"></i></button>
             <a href="result.php?fullscreen=1" title="Full Screen"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+            <?php if($_SESSION['code'] ===""){}else{?>
+            <a href="save.php" title="Save"><i class="fa fa-download" aria-hidden="true"></i></a>
+            <?php } ?>
             <textarea name="code" spellcheck="false" style="width: 100%" rows="18" placeholder="Type or paste your html,css,javascript code here....."><?php
                 if (!isset($_SESSION['code'])) {
                     
